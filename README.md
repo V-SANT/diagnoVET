@@ -20,6 +20,9 @@ To better capture user attention and prevent mistakes, the application could vis
 
 This immediate visual feedback would help users detect abnormal values early and reduce the risk of incorrect data propagating through the diagnosis process.
 
+![DiagnoVET-Weight_Inputs](/images/DiagnoVET-Weight%20Inputs.jpg)
+
+
 ### Improve the “Professional in charge” search bar
 The search bar used to select the responsible professional could be optimized to improve speed and usability:
 
@@ -30,6 +33,9 @@ The search bar used to select the responsible professional could be optimized to
 - Optionally highlight matching characters in search results to reinforce feedback.
 
 These changes would reduce friction, especially in clinics with many registered professionals.
+
+![DiagnoVET-Professional_in_charge](/images/DiagnoVET-“Professional%20in%20charge”%20search%20bar.drawio.png)
+
 
 ### Enhance the image visualizer to support different user workflows
 The current image visualizer could be expanded to better accommodate different user preferences and diagnostic workflows. Allowing users to switch between these modes would make image review more flexible and efficient.
@@ -45,6 +51,8 @@ Displays one image at a time, with left/right navigation and pinch or scroll zoo
 #### List view (file-based)
 A textual list showing file names, upload dates, or image types, useful for experienced users who rely on structured data rather than thumbnails.
 
+![DiagnoVET-Image_visualizer](/images/DiagnoVET-Image%20visualizer.drawio.png)
+
 ### Add contextual help in the diagnosis section
 A contextual help button next to the “Diagnóstico” and “Hallazgos” titles could significantly improve onboarding for new users.
 This help could explain:
@@ -57,7 +65,10 @@ This help could explain:
 
 This reduces confusion and builds trust in AI-assisted features.
 
-### Allow the use of diagnosis templates
+![DiagnoVET-Contextual_help](/images/DiagnoVET-Contextual%20help.drawio.png)
+
+
+## Allow the use of diagnosis templates
 One of the most valuable opportunities for improvement is the introduction of diagnosis templates.
 
 Benefits include:
