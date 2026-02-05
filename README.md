@@ -2,7 +2,60 @@
 
 This document presents the main features identified from the shared videos, along with improvement ideas and potential fixes aimed at making the user experience more fluid, intuitive, and user-friendly.
 
-## Features
+## How to start project
+
+To set up the development environment and test the new functionalities (such as the Diagnostic Template System), follow these steps:
+
+1. Prerequisites
+Ensure you have Node.js (v18 or higher) installed on your machine.
+
+2. Install Dependencies
+Run the following command in the project root to install the base packages:
+```
+npm install
+```
+3. Install Required Icon Library
+The new Diagnosis Editor component relies on lucide-react for its interface icons. Install it manually if it's not in package.json yet:
+```
+npm install lucide-react
+```
+4. Run Development Server
+Start the local server:
+```
+npm run dev
+```
+
+5. Access the App
+Open your browser and navigate to http://localhost:3000 to view the application.
+
+
+## Main Feature: Allow the use of diagnosis templates
+
+This is the selected feature to be tested on this project.
+
+Benefits include:
+
+- Faster report creation without rewriting common structures repeatedly.
+
+- More consistent diagnostic language across professionals.
+
+- Reduced cognitive load during busy clinical workflows.
+
+Suggested functionality:
+
+- A “Use Template” option when creating or editing a diagnosis.
+- A “New Template” button available both:
+
+    - In the configuration/settings area.
+
+    - Directly from the patient or diagnosis editing screen.
+
+Templates could include placeholders (e.g., species, age, findings) that the vet can fill with real data.
+
+More about this feature on the WHY.md file.
+
+
+## Future Fixes and Features
 
 Below are several features and enhancement ideas that could be discussed and potentially implemented.
 
@@ -67,25 +120,3 @@ This reduces confusion and builds trust in AI-assisted features.
 
 ![DiagnoVET-Contextual_help](/images/DiagnoVET-Contextual%20help.drawio.png)
 
-
-## Allow the use of diagnosis templates
-One of the most valuable opportunities for improvement is the introduction of diagnosis templates.
-
-Benefits include:
-
-- Faster report creation without rewriting common structures repeatedly.
-
-- More consistent diagnostic language across professionals.
-
-- Reduced cognitive load during busy clinical workflows.
-
-Suggested functionality:
-
-- A “Use Template” option when creating or editing a diagnosis.
-- A “New Template” button available both:
-
-    - In the configuration/settings area.
-
-    - Directly from the patient or diagnosis editing screen.
-
-Templates could include placeholders (e.g., species, age, findings) that the vet can fill with real data.

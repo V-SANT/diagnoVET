@@ -36,7 +36,6 @@ export default function DiagnosisEditor() {
     // --- Handlers ---
 
     const handleInsertTemplate = (templateContent: string) => {
-        // CAMBIO: Ahora reemplaza todo el contenido en lugar de concatenar
         setContent(templateContent);
         setShowTemplateMenu(false);
     };
@@ -191,7 +190,6 @@ function TemplateModal({ onClose, onSave, currentText }: {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
             <div className="bg-white rounded-lg shadow-xl w-full max-w-md overflow-hidden animate-in fade-in zoom-in duration-200">
                 <div className="flex justify-between items-center p-4 border-b border-gray-100">
-                    {/* CAMBIO: text-gray-900 para asegurar oscuridad */}
                     <h3 className="font-semibold text-gray-900">Nueva Plantilla</h3>
                     <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
                         <X size={20} />
@@ -206,7 +204,6 @@ function TemplateModal({ onClose, onSave, currentText }: {
                             value={title}
                             onChange={(e) => setTitle(e.target.value)}
                             placeholder="Ej: Gastritis Leve"
-                            // CAMBIO: text-gray-900 explícito para evitar herencia de modo oscuro global
                             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 bg-white placeholder-gray-400"
                             autoFocus
                         />
@@ -218,7 +215,6 @@ function TemplateModal({ onClose, onSave, currentText }: {
                             value={content}
                             onChange={(e) => setContent(e.target.value)}
                             placeholder="El texto que se insertará..."
-                            // CAMBIO: text-gray-900 explícito
                             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 min-h-[100px] text-gray-900 bg-white placeholder-gray-400"
                         />
                     </div>
